@@ -6,9 +6,13 @@
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "ts-loader": "3.5.0",
+    "typescript": "^3.0.1"
   },
   "devDependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
     "webpack-dev-server": "2.11.2"
   }
 }
