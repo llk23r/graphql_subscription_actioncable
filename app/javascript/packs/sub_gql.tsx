@@ -4,22 +4,22 @@ import ReactDOM from "react-dom"
 import { client } from "./apollo"
 
 import gql from "graphql-tag"
-import { ApolloProvider, Query } from "react-apollo"
-const TestQuery = gql`
-  {
-    testField
+import { ApolloProvider, Subscription } from "react-apollo"
+const TestSubscription = gql`
+  subscription {
+    testSub
   }
 `
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
     <ApolloProvider client={client}>
-      <Query query={TestQuery}>
+      <Subscription subscription={TestSubscription}>
         {({ data, loading }) => {
           if (loading) return <p>loading</p>
-          return <div>{data.testField}</div>
+          return <div>{data.testSub}</div>
         }}
-      </Query>
+      </Subscription>
     </ApolloProvider>,
     document.body.appendChild(document.createElement("div"))
   )
