@@ -5,7 +5,6 @@ module Types
       description: "subscription test"
 
     def test_sub()
-      Time.now.to_i
     end
   end
 end
