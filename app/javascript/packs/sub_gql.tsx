@@ -1,8 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import ApolloClient from "apollo-boost"
-const client = new ApolloClient()
+import { client } from "./apollo"
 
 import gql from "graphql-tag"
 import { ApolloProvider, Query } from "react-apollo"
