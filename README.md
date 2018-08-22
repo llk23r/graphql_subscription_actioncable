@@ -39,7 +39,6 @@ then you should see a timestamp number on the page.
 - [check cable.yml](https://guides.rubyonrails.org/action_cable_overview.html#adapter-configuration)
 **be sure to use anything other than `adapter: async`**
 - don't just copy [GraphqlChannel sample](http://graphql-ruby.org/api-doc/1.8.7/GraphQL/Subscriptions/ActionCableSubscriptions) as is. It needs some changes.
-- I think methods, in SubscriptionType, don't need context.  You create return object when you [trigger](http://graphql-ruby.org/subscriptions/triggers.html).
 
 ## check the git log
 I kept commands I ran in the log.   It should self-explanatory.
