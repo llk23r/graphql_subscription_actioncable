@@ -1,6 +1,6 @@
 module Types
   class SubscriptionType < Types::BaseObject
-    field :testSub, String,
+    field :test_sub, String,
       null: false,
       description: "subscription test"
 
