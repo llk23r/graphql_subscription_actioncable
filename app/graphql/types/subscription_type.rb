@@ -4,7 +4,8 @@ module Types
       null: false,
       description: "subscription test"
 
-    def test_sub()
+    def test_sub
+      TestWorker.perform_async
     end
   end
 end
