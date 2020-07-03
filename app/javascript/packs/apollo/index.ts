@@ -3,8 +3,7 @@ import { ApolloClient } from "apollo-client"
 import { HttpLink } from "apollo-link-http"
 import { InMemoryCache } from "apollo-cache-inmemory"
 import ActionCable from "actioncable"
-import ActionCableLink from "graphql-ruby-client/subscriptions/ActionCableLink"
-
+import ActionCableLink from 'graphql-ruby-client/dist/subscriptions/ActionCableLink'
 const cable = ActionCable.createConsumer()
 
 const httpLink = new HttpLink({
